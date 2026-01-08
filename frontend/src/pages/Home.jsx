@@ -13,8 +13,9 @@ export default function Home() {
           <div className="ai-left-group">
             <button
               className="ai-back-btn"
-              onClick={() => navigate(-1)}
-              aria-label="Go back"
+              onClick={() => {
+                window.location.href = "https://theozu.com"; 
+              }}
             >
               <svg
                 width="26"
@@ -80,9 +81,6 @@ export default function Home() {
                 <p className="list-desc">Please upload your Aadhaar card</p>
               </div>
             </div>
-            <span className="arrow" aria-hidden="true">
-              ›
-            </span>
           </div>
 
           <div className="list-item">
@@ -97,9 +95,7 @@ export default function Home() {
                 <p className="list-desc">Please upload your driving license</p>
               </div>
             </div>
-            <span className="arrow" aria-hidden="true">
-              ›
-            </span>
+            
           </div>
 
           <div className="list-item">
@@ -114,9 +110,6 @@ export default function Home() {
                 <p className="list-desc">Please upload your bank details</p>
               </div>
             </div>
-            <span className="arrow" aria-hidden="true">
-              ›
-            </span>
           </div>
         </div>
 
